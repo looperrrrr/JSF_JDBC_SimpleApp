@@ -21,14 +21,14 @@ public class CarBean implements Serializable {
 
 		Connection connect = null;
 
-		String url = "jdbc:mysql://localhost:3306/cardb";
+		String url = "jdbc:postgresql://192.168.1.224:5432/test";
 
-		String username = "pankaj";
-		String password = "pankaj123";
+		String username = "postgres";
+		String password = "123";
 
 		try {
 
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.postgresql.jdbc.Driver");
 
 			connect = DriverManager.getConnection(url, username, password);
 			// System.out.println("Connection established"+connect);
