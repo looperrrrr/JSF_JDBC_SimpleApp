@@ -21,16 +21,16 @@ public class CarBean implements Serializable {
 
 		Connection connect = null;
 
-		String url = "jdbc:postgresql://192.168.1.224:5432/test";
+		//String url = "jdbc:postgresql://192.168.1.224:5432/test";
 
-		String username = "postgres";
-		String password = "123";
+		//String username = "postgres";
+		//String password = "123";
 
 		try {
 
-			Class.forName("com.postgresql.jdbc.Driver");
+			Class.forName("org.postgresql.Driver");
 
-			connect = DriverManager.getConnection(url, username, password);
+			connect = DriverManager.getConnection("jdbc:postgresql://192.168.1.224:5432/test", "postgres", "123");
 			// System.out.println("Connection established"+connect);
 
 		} catch (SQLException ex) {

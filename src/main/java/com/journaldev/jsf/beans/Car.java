@@ -11,6 +11,8 @@ public class Car {
 	public Car() {
 	}
 	
+	
+	
 	public Car(Integer cid, String cname, String color, Integer speed,
 			String mfdctry) {
 		this.cid = cid;
