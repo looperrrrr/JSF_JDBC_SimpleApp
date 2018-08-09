@@ -28,9 +28,11 @@ public class CarBean implements Serializable {
 
 		try {
 
-			Class.forName("org.postgresql.Driver");
+			Class.forName("oracle.jdbc.driver.OracleDriver");
 
-			connect = DriverManager.getConnection("jdbc:postgresql://192.168.1.224:5432/test", "postgres", "123");
+			//connect = DriverManager.getConnection("jdbc:postgresql://192.168.1.224:5432/test", "postgres", "123");
+			
+			connect = DriverManager.getConnection("jdbc:oracle:thin:@orcldb:1521:orcl", "scott", "123");
 			// System.out.println("Connection established"+connect);
 
 		} catch (SQLException ex) {

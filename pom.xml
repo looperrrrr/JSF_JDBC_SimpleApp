@@ -58,6 +58,15 @@
            <artifactId>postgresql</artifactId>
            <version>9.2-1003-jdbc4</version>
         </dependency>
+        
+
+        <!-- ojdbc7.jar example -->
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc7</artifactId>
+            <version>12.1.0</version>
+        </dependency>
+
 		
 	</dependencies>
 	
