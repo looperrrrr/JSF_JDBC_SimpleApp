@@ -15,7 +15,6 @@ import javax.faces.bean.SessionScoped;
 @SessionScoped
 public class CarBean implements Serializable {
 
-	private static final long serialVersionUID = 6081417964063918994L;
 
 	public List<Car> getCars() throws ClassNotFoundException, SQLException {
 
